@@ -2,49 +2,81 @@
     box-sizing: border-box;
 }
 
-#div1 {
-    display: block;
-    position: absolute;
+.div1 {
     background-color: #333533;
-    height: 2500px;
-    width: 100vw;
+    display: block;
+    height: 1100px;
+    position: absolute;
+    width: 100%;
 }
 
-#div2 {
-    display: block;
-    text-align: center;
-    margin: 50px auto;
-    width: 60vw;
-    height: 1000px;
+.div2 {
     background-color: #F5CB5C;
-    border: 5px black solid;
-    border-radius: 5px;
+    border: 10px #222222 solid;
+    border-radius: 0px;
+    display: block;
+    height: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    width: 60vw;
+}
+
+.div3 {
+    background-color: #F5CB5C;
+    border: 10px #222222 solid;
+    border-radius: 0px;
+    display: block;
+    height: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    width: 80vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .div2 {
+        max-height: 650px;
+        width: 80vw;
+    }
+
+    .div1 {
+        max-height: 750px;
+    }
 }
 
 .btn {
-    width: 20vw;
     margin: 1vh;
+    width: 25vw;
 }
 
-#div2 p {
+.par1 {
+    color: #333533;
     font-size: 12pt;
     font-weight: bold;
-    color: #333533;
+    margin: 20px 20px;
 }
 
-#div2 h1 {
-    font-size: 10vw;
+.homehead {
+    color: #333533;
     font-family: 'Notable', sans-serif;
-    color: #333533;
-    margin-bottom: 50px;
+    font-size: 10vw;
+    margin-bottom: 30px;
 }
 
-#div2 a {
+.head1 {
+    color: #333533;
+    font-family: 'Notable', sans-serif;
+    font-size: 5vw;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.link2 {
     color: #F5CB5C;
 }
 
-#div2 a:hover {
-    text-decoration: none;
+.link2:hover {
     color: darkgray;
 }
 
