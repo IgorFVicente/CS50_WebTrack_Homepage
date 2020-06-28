@@ -17,21 +17,21 @@
 }
 
 #albums {
-    margin: 30px 2vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 30px;
+    margin: 30px 2vw;
 }
 
 .responsive.iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
     height: 100%;
+    position: absolute;
     text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .album {
@@ -49,9 +49,9 @@
 .accordion {
     background-color: inherit;
     border: 0;
-    height: 75px;
     cursor: pointer;
     font-weight: bold;
+    height: 75px;
 }
 
 .accordion:focus {
@@ -62,11 +62,11 @@
     background-color: #333533;
     border: 1px solid black;
     color: #F5CB5C;
-    margin: 10px;
-    margin-bottom: -20px;
-    height: 30px;
     cursor: pointer;
     font-weight: 500;
+    height: 30px;
+    margin: 10px;
+    margin-bottom: -20px;
 }
 
 .openclose:focus {

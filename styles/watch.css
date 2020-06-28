@@ -1,0 +1,53 @@
+.div3 {
+    background-color: #333533;
+    display: block;
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.div4 {
+    background-color: #F5CB5C;
+    border: 10px #222222 solid;
+    border-radius: 0px;
+    display: block;
+    margin: 50px auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 80vw;
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin: 30px 2vw;
+}
+
+#tvshows {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin: 30px 2vw;
+}
+
+.movie-cover {
+    height: 300px;
+    width: auto;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.movie-details {
+    margin-left: 55px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.movie-border {
+    height: 310px;
+    width: 210px;
+    background-color: black;
+    margin: auto;
+
+}
