@@ -5,7 +5,8 @@
 .div1 {
     background-color: #333533;
     display: block;
-    height: 1100px;
+    min-height: 100vh;
+    max-height: 1300px;
     position: absolute;
     width: 100%;
 }
@@ -19,28 +20,6 @@
     margin: 50px auto;
     text-align: center;
     width: 60vw;
-}
-
-.div3 {
-    background-color: #F5CB5C;
-    border: 10px #222222 solid;
-    border-radius: 0px;
-    display: block;
-    height: 1000px;
-    margin: 50px auto;
-    text-align: center;
-    width: 80vw;
-}
-
-@media only screen and (max-width: 600px) {
-    .div2 {
-        max-height: 650px;
-        width: 80vw;
-    }
-
-    .div1 {
-        max-height: 750px;
-    }
 }
 
 .btn {
@@ -58,14 +37,19 @@
 .homehead {
     color: #333533;
     font-family: 'Notable', sans-serif;
-    font-size: 10vw;
+    font-size: 9vw;
     margin-bottom: 30px;
 }
 
 .head1 {
     color: #333533;
     font-family: 'Notable', sans-serif;
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-bottom: 15px;
+}
+
+h2 {
+    padding-bottom: 10px;
 }
 
 .link:hover {
@@ -80,7 +64,25 @@
     color: darkgray;
 }
 
-#brasil {
-    margin: auto;
-    width: 500px;
+.explain {
+    margin-top: -15px;
+    font-size: 10pt;
+}
+
+.homelink {
+    color: #333533;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.homelink:hover {
+    color: #333533;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .div2 {
+        max-height: 650px;
+        width: 90vw;
+    }
 }

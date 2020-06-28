@@ -4,20 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>What I like to listen</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/listen.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
-    <div class="div1">
     <div class="div3">
+    <div class="div4">
             <h1 class="head1">Hello world</h1>
-        <a href="index.html" class="link homelink">Home</a>
+        <a href="index.html" class="link homelink">Return to home</a>
         <h2>Here are some of my favourite albums:</h2>
-        <h2>And here is a playlist of some brazilian songs you may like:</h2>
-        <div id="brasil">
-        <iframe src="https://open.spotify.com/embed/playlist/3AHl6uKi3oW09AJbJ61Ai9" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <p class="explain">They are named as "album - artist [year]" - Click on the name to open a Spotify preview</p>
+        <button class="openclose" onclick="openall()">OPEN ALL / CLOSE ALL</button>
+        <div id="albums">
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a1')">My Beautiful Dark Twisted Fantasy - Kanye West [2010]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a1" src="https://open.spotify.com/embed/album/20r762YmB5HeofjMCiPMLv" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a2')">Teen Dream - Beach House [2010]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe  class="responsive.iframe album" id="a2" src="https://open.spotify.com/embed/album/6psfQ7hu5uqFLkdtWyygcT" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a3')">Doolittle - Pixies [1989]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a3" src="https://open.spotify.com/embed/album/6ymZBbRSmzAvoSGmwAFoxm" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a4')">The Earth Is Not a Cold Dead Place - Explosions in the Sky [2003]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a4" src="https://open.spotify.com/embed/album/3lLwFslntPTc7cBofBXXDp" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a5')">Turn on the Bright Lights - Interpol [2002]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a5" src="https://open.spotify.com/embed/album/79deKDaslwLfH3yPR2T3SB" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a6')">Rumours - Fleetwood Mac [1976]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a6" src="https://open.spotify.com/embed/album/1bt6q2SruMsBtcerNVtpZB" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a7')">Man on the Moon: The End of Day - Kid Cudi [2009]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a7" src="https://open.spotify.com/embed/album/1OnCqi7IuzjnrOh2ZNvJHd" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a8')">Songs for the Deaf - Queens of the Stone Age [2002]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a8" src="https://open.spotify.com/embed/album/4w3NeXtywU398NYW4903rY" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a9')">Lost in the Dream - The War on Drugs [2014]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <br>
+                <iframe class="responsive.iframe album" id="a9" src="https://open.spotify.com/embed/album/14xxjLlbGy8ACm4MorBjD5" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a10')">Kid A - Radiohead [2000]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a10" src="https://open.spotify.com/embed/album/19RUXBFyM4PpmrLRdtqWbp" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a11')">White Pony - Deftones [2000]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a11" src="https://open.spotify.com/embed/album/5LEXck3kfixFaA3CqVE7bC" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a12')">For Emma, Forever Ago - Bon Iver [2007]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a12" src="https://open.spotify.com/embed/album/4SxFsOO0h4Nz3lFJuysKq5" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a13')">Siamese Dream - The Smashing Pumpkins [1993]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a13" src="https://open.spotify.com/embed/album/2Qs2SpclDToB087fLolhCN" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a14')">Carrie & Lowell - Sufjan Stevens [2015]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a14" src="https://open.spotify.com/embed/album/0U8DeqqKDgIhIiWOdqiQXE" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a15')">The Colour in Anything - James Blake [2016]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a15" src="https://open.spotify.com/embed/album/1WyrGCkFDlH1xPadZ5qTkL" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a16')">Channel Orange - Frank Ocean [2012]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a16" src="https://open.spotify.com/embed/album/623Ef2ZEB3Njklix4PC0Rs" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a17')">Heaven & Hell - Black Sabbath [1980]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a17" src="https://open.spotify.com/embed/album/6SQi2QhRzKSOUHKbuzlqnt" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a18')">Black Sabbath - Black Sabbath [1970]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a18" src="https://open.spotify.com/embed/album/2T6jeELx5BqH4GMLObBy10" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a19')">Deltron 3030 - The Instrumentals - Delton 3030 [2000]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a19" src="https://open.spotify.com/embed/album/3lXpgWLPercbWXQ3bRKuhg" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a20')">Donuts - J Dilla [2006]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a20" src="https://open.spotify.com/embed/album/7lXgEecCoWkW1Lvf2jpN4y" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a21')">DJ Shadow - Endtroducing... [2005]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a21" src="https://open.spotify.com/embed/album/06HRPqj5bIfhxSpXN7lAPR" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a22')">Is This It - The Strokes [2001]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a22" src="https://open.spotify.com/embed/album/2yNaksHgeMQM9Quse463b5" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a23')">Humbug - Arctic Monkeys [2009]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a23" src="https://open.spotify.com/embed/album/5IEoiwkThhRmSMBANhpxl2" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a24')">Weezer (Blue Album) - Weezer [1994]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a24" src="https://open.spotify.com/embed/album/1xpGyKyV26uPstk1Elgp9Q" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a25')">Alligator - The National [2005]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a25" src="https://open.spotify.com/embed/album/4rwdrCccOqPlRjFZq0H1M1" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a26')">Ten - Pearl Jam [1991]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a26" src="https://open.spotify.com/embed/album/5B4PYA7wNN4WdEXdIJu58a" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="iframe.container">
+                <button class="accordion" onclick="openalbum('a27')">Goo - Sonic Youth [1990]<br><svg width="1em" height="1em" viewbox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg></button>
+                <iframe class="responsive.iframe album" id="a27" src="https://open.spotify.com/embed/album/4G1YVElmzCn3QkVFQyuxkt" width="300" height="85" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <h2>Also, here is a playlist of some brazilian songs you may like:</h2>
+        <div class="iframe.container">
+            <iframe class="resposive.iframe album2" src="https://open.spotify.com/embed/playlist/3AHl6uKi3oW09AJbJ61Ai9" width="300" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media" id="playlist-brasil"></iframe>
         </div>
     </div>
     </div>

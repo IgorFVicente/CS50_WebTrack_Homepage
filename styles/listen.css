@@ -1,0 +1,98 @@
+.div3 {
+    background-color: #333533;
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+.div4 {
+    background-color: #F5CB5C;
+    border: 10px #222222 solid;
+    border-radius: 0px;
+    display: block;
+    margin: 50px auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 80vw;
+}
+
+#albums {
+    margin: 30px 2vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.responsive.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.album {
+    border: 5px solid #333533;
+    border-radius: 3px;
+    display: none;
+    overflow: hidden;
+}
+
+.album2 {
+    border: 5px solid #333533;
+    border-radius: 3px;
+}
+
+.accordion {
+    background-color: inherit;
+    border: 0;
+    height: 75px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accordion:focus {
+    outline: none;
+}
+
+.openclose {
+    background-color: #333533;
+    border: 1px solid black;
+    color: #F5CB5C;
+    margin: 10px;
+    margin-bottom: -20px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.openclose:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 788px) {
+    .div4 {
+        width: 90vw;
+    }
+
+    #albums {
+        margin-left: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1138px) {
+    .div3 {
+        max-height: 4000px
+    }
+
+    .div4 {
+        max-height: 3800px;
+    }
+}
+
+@media only screen and (max-width: 788px) {
+    
+}
