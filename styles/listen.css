@@ -25,6 +25,7 @@
 }
 
 .responsive.iframe {
+    border: 0px;
     height: 100%;
     position: absolute;
     text-align: center;
@@ -84,14 +85,3 @@
         margin-left: 2vw;
     }
 }
-
-/*
-@media only screen and (min-width: 1138px) {
-    .div3 {
-        max-height: 4000px
-    }
-
-    .div4 {
-        max-height: 3800px;
-    }
-} */
