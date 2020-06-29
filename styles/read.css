@@ -16,3 +16,38 @@
     text-align: center;
     width: 80vw;
 }
+
+#books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin: 30px 2vw;
+}
+
+.book-cover {
+    height: 300px;
+    margin: auto;
+    margin-top: 3px;
+    width: auto;
+}
+
+.book-border {
+    height: 306px;
+    width: 208px;
+    background-color: black;
+    margin: auto;
+}
+
+.book-details {
+    margin-left: 55px;
+    text-align: left;
+}
+
+.book-details a {
+    color: #333533;
+    font-weight: bold;
+}
+
+.book-details a:hover {
+    color: black;
+}

@@ -81,9 +81,13 @@ h2 {
 }
 
 .footer {
+    bottom: 0;
     color: whitesmoke;
-    text-align: center;
     font-size: 10pt;
+    padding-top: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 .gitlogo {

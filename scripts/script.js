@@ -13,7 +13,7 @@ function openalbum(a) {
 
 function openall() {
     if (op == 0) {
-        for (i = 1; i < 28; i++) {
+        for (i = 1; i < 25; i++) {
             anumber = 'a' + i;
             album = document.getElementById(anumber);
             album.style.display = 'block';
@@ -21,7 +21,7 @@ function openall() {
         op = 1;
     }
     else {
-        for (i = 1; i < 28; i++) {
+        for (i = 1; i < 25; i++) {
             anumber = 'a' + i;
             album = document.getElementById(anumber);
             album.style.display = 'none';
