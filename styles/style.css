@@ -25,6 +25,7 @@
 .btn {
     margin: 1vh;
     width: 25vw;
+    color: #F5CB5C !important;
 }
 
 .par1 {
@@ -54,10 +55,6 @@ h2 {
 
 .link:hover {
     text-decoration: none;
-}
-
-.link2 {
-    color: #F5CB5C;
 }
 
 .link2:hover {
